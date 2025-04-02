@@ -55,6 +55,7 @@ win_counts["ISO"] = win_counts["Winner"].map(iso_map)
 
 app = dash.Dash(__name__)
 app.title = "FIFA World Cup Dashboard"
+server = app.server
 
 app.layout = html.Div([
     html.H1("FIFA World Cup Winners and Runner-Ups Dashboard"),
